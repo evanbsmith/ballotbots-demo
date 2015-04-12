@@ -1,0 +1,51 @@
+.loading {
+  padding-top: 100px;
+}
+
+nav {
+  margin-bottom: 24px;
+}
+
+ul.side-nav li a {
+  line-height: 44px;
+  padding: 24px;
+  display: block;
+}
+
+ul.side-nav li {
+  float: none;
+}
+
+#home-banner {
+    height: 500px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+	url(/images/robot-mural.jpg) no-repeat center left;
+    background-size: cover;
+}
+
+#home-logo {
+	width:100%;
+}
+
+#home-banner {
+	h2, h3, h4, h5 {
+		color: #fff;
+		font-weight: bold;
+		text-shadow: 1px 1px rgb(50,50,50);
+	}
+}
+
+h1#logo-text {
+	font-size: 6rem;
+	text-shadow: 2px 2px rgb(50,50,50);
+	color: #fff;
+	font-weight:300;
+
+	span#logo-text-bold {
+		font-weight:bold;
+		text-decoration: underline;
+	}
+}

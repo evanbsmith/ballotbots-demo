@@ -1,0 +1,37 @@
+// Transparent Navbar
+
+.navbar-transparent {
+	nav {
+		background-color: $transparent;
+		@extend .z-depth-0;
+	}
+}
+
+// Fixed Navbar
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  height: $navbar-height-mobile;
+  z-index: 998;
+
+  nav {
+    position: fixed;
+  }
+}
+@media #{$medium-and-up} {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: $navbar-height;
+    line-height: $navbar-height;
+  }
+  .navbar-fixed {
+    height: $navbar-height;
+  }
+}
+
+// Style Changes
+
+nav {
+	.brand-logo {
+		font-size: 1.5rem;
+	}
+}

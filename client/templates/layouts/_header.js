@@ -11,5 +11,10 @@ Template._header.rendered = function() {
     });
 
     this.$('.button-collapse').sideNav({menuWidth: 240, activationWidth: 70});
+	
+	this.$('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+	
   }.bind(this), 200);
 };
