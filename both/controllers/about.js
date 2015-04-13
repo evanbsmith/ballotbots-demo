@@ -1,0 +1,5 @@
+AboutController = AppController.extend({
+  data: {
+
+  }
+});

@@ -3,3 +3,12 @@
 .z-depth-0{
     @include box-shadow-2(0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0));
 }
+
+// show bullets option
+
+ul.show-bullets {
+  padding: 0 0 0 40px;
+  li {
+    list-style-type: disc;
+  }
+}

@@ -1,3 +1,42 @@
+#loggedOutWrapper {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),
+	url(/images/robot-mural.jpg) no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  
+  .col {
+	  background-color: #fff;
+  }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+
+footer {
+	a.btn {
+		margin-bottom:0;
+	}
+}
+
 .loading {
   padding-top: 100px;
 }
@@ -16,6 +55,18 @@ ul.side-nav li {
   float: none;
 }
 
+#logo-container {
+	height: 57px;
+	padding-top:5px;
+	#logo-text {
+		font-size:38px;
+		font-weight:300;
+		#logo-text-bots {
+			font-weight:600;
+		}
+	}
+}
+
 #home-banner {
     height: 500px;
     background: linear-gradient(
@@ -26,9 +77,9 @@ ul.side-nav li {
     background-size: cover;
 }
 
-#home-logo {
-	width:100%;
-}
+//#home-logo {
+//	width:100%;
+//}
 
 #home-banner {
 	h2, h3, h4, h5 {
@@ -46,6 +97,65 @@ h1#logo-text {
 
 	span#logo-text-bold {
 		font-weight:bold;
-		text-decoration: underline;
+		//text-decoration: underline;
 	}
+}
+
+.bot-image {
+	padding:15px;
+}
+
+.bot-card-left {
+	.card-content{
+		padding:0;
+	}
+	
+	.collection {
+		margin:0;
+		border: 0px;
+	}
+	
+	.collection .collection-item.avatar {
+		height: auto;
+	}
+
+	.collection .collection-item:first-child {
+		border-top: 1px solid #e0e0e0;
+	}
+}
+
+#bot-map {
+	height:450px;
+}
+
+div.leaflet-container {
+	.leaflet-control-container {
+		a {
+			margin-right:0;
+		}
+	}
+}
+
+#echobot-chart-card {
+	.card-content {
+		padding: 0;
+		margin: 20px;
+	}
+}
+
+#echobot-chart {
+	height:450px;
+	//width:100%;
+}
+
+#optobot-chart-card {
+	.card-content {
+		padding: 0;
+		margin: 20px;
+	}
+}
+
+#optobot-chart {
+	height:450px;
+	//width:100%;
 }

@@ -1,0 +1,140 @@
+<template name="bots">
+    <nav class="top-nav">
+  	  <div class="container">
+  		  <div class="nav-wrapper">
+  			  <a class="page-title">The Bots</a>
+  		  </div>
+  	  </div>
+    </nav>
+  	<div class="container">
+  		<div class="row">
+  			<div clas="col m4 s12">
+				<div id="cartobot" class="">
+					<div class="row">
+					<div class="col s12">
+						<h4 class="header">CartoBot</h4>
+						<div class="divider"></div>
+					</div>
+				</div>
+					<div class="row" id="cartobot-cards">
+					<div class="col s12 m4">
+				    	<div class="card bot-card-left" id="cartobot-avatar-card">
+				            <div class="grey lighten-5">
+				              <img class="bot-image circle responsive-img" src="/images/rosie.jpeg">
+				            </div>
+				            <div class="card-content">
+				              <ul class="collection">
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Measures</span>
+									  <p>Location of election materials.</p>
+								  </li>
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Sensor</span>
+									  <p>GPS</p>
+								  </li>
+							  </ul>
+				            </div>
+				      	</div>
+					</div>
+					<div class="col s12 m8">
+				    	<div class="card bot-card-right" id="cartobot-map-card">
+				            <div class="card-content" id="bot-map">
+				              
+				            </div>
+				      	</div>
+					</div>
+				</div>
+				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div clas="col m4 s12">
+				<div id="echobot" class="">
+					<div class="row">
+					<div class="col s12">
+						<h4 class="header">EchoBot</h4>
+						<div class="divider"></div>
+					</div>
+				</div>
+					<div class="row" id="echobot-cards">
+					<div class="col s12 m4">
+				    	<div class="card bot-card-left" id="echobot-avatar-card">
+				            <div class="grey lighten-5">
+				              <img class="bot-image circle responsive-img" src="/images/wall-e.jpg">
+				            </div>
+				            <div class="card-content">
+				              <ul class="collection">
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Measures</span>
+									  <p>Ballots falling into the ballot box.</p>
+								  </li>
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Sensor</span>
+									  <p>Ultrasonic sonar</p>
+								  </li>
+							  </ul>
+				            </div>
+				      	</div>
+					</div>
+					<div class="col s12 m8">
+				    	<div class="card bot-card-right" id="echobot-chart-card">
+				            <div class="card-content">
+								<canvas id="echobot-chart" height="410"> </canvas>
+				            	
+				            </div>
+						</div>
+					</div>
+				</div>
+				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div clas="col m4 s12">
+				<div id="optobot" class="">
+					<div class="row">
+					<div class="col s12">
+						<h4 class="header">OptoBot</h4>
+						<div class="divider"></div>
+					</div>
+				</div>
+					<div class="row" id="optobot-cards">
+					<div class="col s12 m4">
+				    	<div class="card bot-card-left" id="optobot-avatar-card">
+				            <div class="grey lighten-5">
+				              <img class="bot-image circle responsive-img" src="/images/r2-d2.jpg">
+				            </div>
+				            <div class="card-content">
+				              <ul class="collection">
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Measures</span>
+									  <p>Number of people entering and leaving a polling station.</p>
+								  </li>
+								  <li class="collection-item avatar">
+									  <i class="mdi-action-assessment circle materialize-red lighten-2"></i>
+									  <span class="title">Sensor</span>
+									  <p>Infrared motion detection</p>
+								  </li>
+							  </ul>
+				            </div>
+				      	</div>
+					</div>
+					<div class="col s12 m8">
+				    	<div class="card bot-card-right" id="optobot-chart-card">
+				            <div class="card-content">
+									<canvas id="optobot-chart" height="410"> </canvas>
+				            	
+					            </div>
+				            </div>
+						</div>
+					</div>
+				</div>
+				</div>
+  			</div>
+			
+  	</div>
+</template>

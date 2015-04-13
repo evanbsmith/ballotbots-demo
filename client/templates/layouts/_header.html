@@ -1,26 +1,42 @@
 <template name="_header">
   <header>
+	  
 	  <div class="container" >
 		  <a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a>
 	  </div>
 	  <ul id="slide-out" class="side-nav fixed">
 	      <li class="logo">
-			  <a id="logo-container" href="#" class="brand-logo">
-				  <img id="front-page-logo" src="/images/logo.png" />
+			  <a id="logo-container" href="{{ pathFor 'home' }}" class="brand-logo">
+				  <span id="logo-text">ballot<span id="logo-text-bots">Bots</span></span>
+				  <!-- <img id="front-page-logo" src="/images/logo.png" /> -->
 			  </a>
 		  </li>
-		  <li class="bold">
-		  	<a href="#" class="waves-effect waves-teal">About</a>
+		  <li class=" {{ isActiveRoute regex='about' }}">
+		  	<a href="{{ pathFor 'about' }}" class=" waves-effect waves-red">About</a>
 		  </li>
-		  <li class="no-padding">
+		  <!-- <li class="no-padding">
 		  	<ul class="collapsible collapsible-accordion">
-				<li class="bold active">
-					<a class="collapsible-header waves-effect waves-teal active">Demo Bots</a>
+				<li class="">
+					<a href="{{ pathFor 'bots' }}" class="collapsible-header waves-effect waves-teal">The Bots</a>
 					<div class="collapsible-body">
 						<ul>
 				  		  <li><a href="#"><i class="small mdi-action-explore"></i>CartoBot</a></li>
 				  		  <li><a href="#"><i class="small mdi-hardware-speaker"></i>EchoBot</a></li>
 				  	      <li><a href="#"><i class="small mdi-image-filter-tilt-shift"></i>OptoBot</a></li>
+					  	</ul>
+				  	</div>
+			  	</li>
+		  	</ul>
+		  </li> -->
+		  <li class="no-padding">
+		  	<ul class="">
+				<li class="">
+					<a href="{{ pathFor 'bots' }}" class="waves-effect waves-red">The Bots</a>
+					<div class="collapsible-body-style">
+						<ul class="">
+				  		  <li><a href="bots#cartobot"><i class="small mdi-action-explore"></i>CartoBot</a></li>
+				  		  <li><a href="bots#echobot"><i class="small mdi-hardware-speaker"></i>EchoBot</a></li>
+				  	      <li><a href="bots#optobot"><i class="small mdi-image-filter-tilt-shift"></i>OptoBot</a></li>
 					  	</ul>
 				  	</div>
 			  	</li>
