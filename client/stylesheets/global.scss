@@ -159,3 +159,19 @@ div.leaflet-container {
 	height:450px;
 	//width:100%;
 }
+
+// Leaflet JS SVG polyfill
+
+.leaflet-map-pane {
+	svg {
+		height: inherit;
+		width: inherit;
+	}
+}
+
+.leaflet-popup-pane {
+	.leaflet-popup-close-button {
+		margin-right: 0;
+	}
+}
+

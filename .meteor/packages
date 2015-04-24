@@ -23,6 +23,7 @@ aldeed:autoform
 aldeed:collection2
 gildaspk:autoform-materialize
 fourseven:scss
-bevanhunt:leaflet
 nvd3:nvd3
 chart:chart
+d3js:d3
+pauloborges:mapbox

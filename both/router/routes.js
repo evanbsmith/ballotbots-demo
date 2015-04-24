@@ -7,7 +7,11 @@ Router.route('/about', {
 });
 
 Router.route('/bots', {
-	name: 'bots'
+	name: 'bots',
+	waitOn: function () {
+	    // return one handle, a function, or an array
+	    return [Meteor.subscribe('optobotdata'), Meteor.subscribe('cartobotdata')];
+	}
 });
 
 Router.route('/dashboard', {
