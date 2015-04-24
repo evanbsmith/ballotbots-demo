@@ -106,6 +106,18 @@ h1#logo-text {
 		font-weight:bold;
 		//text-decoration: underline;
 	}
+	
+	
+	
+	@media #{$medium-and-down} {
+	    // styles for small screens and down
+		font-size: 4.9rem;
+	}
+	
+	@media #{$small-and-down} {
+	    // styles for small screens and down
+		font-size: 3.75rem;
+	}
 }
 
 .bot-image {
