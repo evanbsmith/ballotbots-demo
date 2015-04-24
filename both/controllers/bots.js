@@ -1,0 +1,5 @@
+BotsController = AppController.extend({
+  data: {
+
+  }
+});

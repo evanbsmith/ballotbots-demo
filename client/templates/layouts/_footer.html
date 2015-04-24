@@ -1,9 +1,29 @@
 <template name="_footer">
-  <footer>
+  <footer class="page-footer">
     <div class="container">
-      <p class="text-center text-muted">
-        &copy; Copyright Project Title
-      </p>
+      <div class="row valign-wrapper">
+        <div class="col s8 valign">
+          <h5 class="grey-text text-lighten-4 left-align">
+            A project of Democracy International.
+          </h5>
+        </div>
+        <div class="col s2 offset-s2 valign">
+          <div class="right-align valign-wrapper">
+          	{{#if currentUser}}
+				<a href="#" class="materialize-red lighten-4 materialize-red-text text-darken-3 waves-effect waves-light btn valign" data-action="logout">Log Out</a>
+			{{/if}}
+          </div>
+		  <!-- <h5 class="grey-text text-lighten-4 right-align">
+            A project of Democracy International.
+          </h5> -->
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Copyright Democracy International, Inc.
+      </div>
     </div>
   </footer>
 </template>

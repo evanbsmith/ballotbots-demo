@@ -1,44 +1,50 @@
 <template name="_header">
+  <header>
+	  
+	  <div class="container" >
+		  <a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a>
+	  </div>
+	  <ul id="slide-out" class="side-nav fixed">
+	      <li class="logo">
+			  <a id="logo-container" href="{{ pathFor 'home' }}" class="brand-logo">
+				  <span id="logo-text">ballot<span id="logo-text-bots">Bots</span></span>
+				  <!-- <img id="front-page-logo" src="/images/logo.png" /> -->
+			  </a>
+		  </li>
+		  <li class=" {{ isActiveRoute regex='about' }}">
+		  	<a href="{{ pathFor 'about' }}" class=" waves-effect waves-red">About</a>
+		  </li>
+		  <!-- <li class="no-padding">
+		  	<ul class="collapsible collapsible-accordion">
+				<li class="">
+					<a href="{{ pathFor 'bots' }}" class="collapsible-header waves-effect waves-teal">The Bots</a>
+					<div class="collapsible-body">
+						<ul>
+				  		  <li><a href="#"><i class="small mdi-action-explore"></i>CartoBot</a></li>
+				  		  <li><a href="#"><i class="small mdi-hardware-speaker"></i>EchoBot</a></li>
+				  	      <li><a href="#"><i class="small mdi-image-filter-tilt-shift"></i>OptoBot</a></li>
+					  	</ul>
+				  	</div>
+			  	</li>
+		  	</ul>
+		  </li> -->
+		  <li class="no-padding">
+		  	<ul class="">
+				<li class="">
+					<a href="{{ pathFor 'bots' }}" class="waves-effect waves-red">The Bots</a>
+					<div class="collapsible-body-style">
+						<ul class="">
+				  		  <li><a href="bots#cartobot"><i class="small mdi-action-explore"></i>CartoBot</a></li>
+				  		  <li><a href="bots#echobot"><i class="small mdi-hardware-speaker"></i>EchoBot</a></li>
+				  	      <li><a href="bots#optobot"><i class="small mdi-image-filter-tilt-shift"></i>OptoBot</a></li>
+					  	</ul>
+				  	</div>
+			  	</li>
+		  	</ul>
+		  </li>
 
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{pathFor 'home'}}">Project Title</a>
-      </div>
-
-      <div class="collapse navbar-collapse" id="main-nav">
-        {{#if currentUser}}
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-user"></i> {{ currentUser.profile.name }} <i class="fa fa-caret-down"></i>
-              </a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#" data-action="logout"><i class="fa fa-lock"></i> Sign Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        {{else}}
-          <div class="navbar-right">
-            <a href="{{ pathFor 'atSignIn' }}" class="btn btn-default navbar-btn">Sign in</a>
-            <a href="{{ pathFor 'atSignUp' }}" class="btn btn-primary navbar-btn">Register</a>
-          </div>
-        {{/if}}
-
-        <ul class="nav navbar-nav navbar-right">
-          <li class="{{ isActiveRoute regex='home' }}"><a href="{{ pathFor 'home' }}"><i class="fa fa-home"></i> Home</a></li>
-          <li class="{{ isActiveRoute regex='dashboard' }}"><a href="{{ pathFor 'dashboard' }}"><i class="fa fa-gear"></i> Dashboard</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
+	  </ul>
+	  
+  </header>
 
 </template>
