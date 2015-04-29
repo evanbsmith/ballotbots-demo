@@ -18,7 +18,7 @@ if (Meteor.isServer) {
 		console.log('echoBotData count: ' + EchobotData.find().count());
 		console.log(EchobotData.findOne());
         if(EchobotData.find().count() === 0){
-            var csvData = Assets.getText('echobotdata.csv');
+            var csvData = Assets.getText('echobotdata-real.csv');
 			// console.log('csvData raw');
 // 			console.log(csvData);
 // 			console.log('optobotdata - imported');
