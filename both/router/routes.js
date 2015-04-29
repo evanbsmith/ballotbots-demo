@@ -10,7 +10,7 @@ Router.route('/bots', {
 	name: 'bots',
 	waitOn: function () {
 	    // return one handle, a function, or an array
-	    return [Meteor.subscribe('optobotdata'), Meteor.subscribe('cartobotdata')];
+	    return [Meteor.subscribe('optobotdata'), Meteor.subscribe('cartobotdata'), Meteor.subscribe('echobotdata')];
 	}
 });
 

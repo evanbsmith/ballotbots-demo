@@ -1,12 +1,13 @@
-OptobotData = new Mongo.Collection('optobotdata');
+EchobotData = new Mongo.Collection('echobotdata');
 
-OptobotData.helpers({
+EchobotData.helpers({
 
 });
 
-OptobotData.before.insert(function (userId, doc) {
+EchobotData.before.insert(function (userId, doc) {
   doc.createdAt = moment().toDate();
   doc.value = parseInt(doc.value);
+  doc.label = parseInt(doc.label);
   doc.timestamp = moment(doc.date + " " + doc.time).format();
 });
 
@@ -14,10 +15,10 @@ OptobotData.before.insert(function (userId, doc) {
 
 if (Meteor.isServer) {
 	Meteor.startup(function () {
-		console.log('optoBotData count: ' + OptobotData.find().count());
-		console.log(OptobotData.findOne());
-        if(OptobotData.find().count() === 0){
-            var csvData = Assets.getText('optobotdata.csv');
+		console.log('echoBotData count: ' + EchobotData.find().count());
+		console.log(EchobotData.findOne());
+        if(EchobotData.find().count() === 0){
+            var csvData = Assets.getText('echobotdata.csv');
 			// console.log('csvData raw');
 // 			console.log(csvData);
 // 			console.log('optobotdata - imported');
@@ -26,10 +27,8 @@ if (Meteor.isServer) {
 // 			console.log(dataAsArray);
 			var dataAsJSON = arrayToJSON(dataAsArray);
 			_.each(dataAsJSON, function(item,key,list){
-				OptobotData.insert(item);
+				EchobotData.insert(item);
 			});
         }
 	});
 }
-
-
